@@ -31,7 +31,7 @@ def get_ip():
             print("Unable to connect to DNS. Check ethernet connection.")
             time.sleep(2)
 
-    sys.exit(1)
+    print("No IP found, continuing without ip")
 
 
 def get_mac(ip):
@@ -43,7 +43,7 @@ def get_mac(ip):
             print("Unable to fetch MAC address.")
             time.sleep(2)
 
-    sys.exit(1)
+    print("No MAC found, continuing without mac")
 
 
 def get_input(msg):
