@@ -25,7 +25,7 @@ class Team:
 def get_ip():
     for i in range(4):
         try:
-            ip = socket.gethostbyname("edu.ddsb.ads")
+            ip = socket.gethostbyname(socket.getfqdn())
             return ip
         except OSError:
             print("Unable to connect to DNS. Check ethernet connection.")
@@ -34,10 +34,10 @@ def get_ip():
     sys.exit(1)
 
 
-def get_mac():
+def get_mac(ip):
     for i in range(4):
         try:
-            mac = get_mac_address(hostname="edu.ddsb.ads")
+            mac = get_mac_address(ip=ip)
             return mac
         except OSError:
             print("Unable to fetch MAC address.")
@@ -133,7 +133,10 @@ def main():
     print("--- Imaging Assist Tool ---")
 
     ip = get_ip()
-    mac = get_mac()
+    mac = get_mac(ip)
+
+    print(mac, ",", ip)
+
     team = Team()
     school = get_input("School Name: ")
     room = get_input("Room: ")
