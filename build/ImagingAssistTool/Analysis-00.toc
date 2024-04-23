@@ -485,13 +485,13 @@
   ('socket',
    'C:\\Users\\awoodhouse\\AppData\\Local\\Programs\\Python\\Python36\\lib\\socket.py',
    'PYMODULE')],
- [('VCRUNTIME140.dll',
-   'C:\\Users\\awoodhouse\\OneDrive - '
-   'CONPUTE\\Desktop\\Code\\ImagerInfo\\venv\\Scripts\\VCRUNTIME140.dll',
-   'BINARY'),
-  ('python36.dll',
+ [('python36.dll',
    'C:\\Users\\awoodhouse\\OneDrive - '
    'CONPUTE\\Desktop\\Code\\ImagerInfo\\venv\\Scripts\\python36.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\awoodhouse\\OneDrive - '
+   'CONPUTE\\Desktop\\Code\\ImagerInfo\\venv\\Scripts\\VCRUNTIME140.dll',
    'BINARY'),
   ('select',
    'C:\\Users\\awoodhouse\\AppData\\Local\\Programs\\Python\\Python36\\DLLs\\select.pyd',

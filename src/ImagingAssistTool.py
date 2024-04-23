@@ -134,6 +134,7 @@ def main():
 
     ip = get_ip()
     mac = get_mac(ip)
+    mac = mac.upper()
 
     print(mac, ",", ip)
 
